@@ -16,7 +16,7 @@ defmodule Hangman do
   The second level supervisor monitors a game server, restarting it
   if it stops abnormally.
 
-  We use the `one_for_all` strategy, so he top level supervisor
+  We use the `one_for_all` strategy, so the top level supervisor
   restarts everything if either of its children quits. The game
   supervisor uses `one_for_one`
    """
